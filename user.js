@@ -1,2 +1,0 @@
-var sections = []
-var week = []

@@ -1,9 +1,11 @@
 class Section {
-    constructor(name, day, time_start, time_end, link) {
+    constructor(name, day, time_start_hr, time_start_min, time_end_hr, time_end_min, link) {
         this.name = name;
         this.day = day;
-        this.time_start = time_start;
-        this.time_end = time_end;
+        this.time_start_hr = time_start_hr;
+        this.time_start_min = time_start_min;
+        this.time_end_hr = time_end_hr;
+        this.time_end_min = time_end_min;
         this.link = link;
     }
 
@@ -15,12 +17,19 @@ class Section {
         return this.day;
     }
 
-    get time_start() {
-        return this.time_start;
+    get time_start_hr() {
+        return this.time_start_hr;
+    }
+    get time_start_min() {
+        return this.time_start_min;
     }
 
-    get time_end() {
-        return this.time_end;
+    get time_end_hr() {
+        return this.time_end_hr;
+    }
+
+    get time_end_min() {
+        return this.time_end_min;
     }
 
     get link() {
@@ -35,12 +44,18 @@ class Section {
         this.day = day;
     }
 
-    set time_start(time_start) {
-        this.time_start = time_start;
+    set time_start_hr(time_start) {
+        this.time_start_hr = time_start;
+    }
+    set time_start_min(time_start) {
+        this.time_start_min = time_start;
     }
 
-    set time_end(time_end) {
-        this.time_end = time_end;
+    set time_end_hr(time_end) {
+        this.time_end_hr = time_end;
+    }
+    set time_end_min(time_end) {
+        this.time_end_min = time_end;
     }
 
     set link(link) {
@@ -50,10 +65,9 @@ class Section {
 
 // saving objects
 var testSect1 = new Section("16.001",1,10,0,11,0,"fake_link");
-var testSect2 = new Section("5.111",2, 10,30,12,0,"fake_link");
+var testSect2 = new Section("5.111",0, 01,0,3,0,"fake_link");
 
 var sects = [testSect1, testSect2];
-var testWeek = [[],[testSect1],[testSect2],[],[],[],[]];
 
 
 function saveSectionsList(sections) {
