@@ -16,3 +16,17 @@ changeColor.onclick = function(element) {
         
     });
 };
+
+let timeDiv = document.getElementById('timeDiv');
+function getDTime() {
+    var date = new Date();
+    var day_wk = date.getDay();
+    var current_hour = date.getHours();
+    var current_mins = date.getMinutes();
+
+    let dateTime = document.createElement('p');
+    dateTime.textContent = day_wk.toString()+' '+current_hour.toString()+":"+current_mins.toString();
+
+    timeDiv.appendChild(dateTime);
+}
+getDTime();
