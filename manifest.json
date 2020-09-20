@@ -1,7 +1,7 @@
 {
-    "name": "schedulink",
+    "name": "Schedulink",
     "version": "1.0",
-    "description": "schedulink description!",
+    "description": "Schedulink helps you teleport to your regularly scheduled online classes and activities with the click of a Chrome extension.",
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "background": {
         "scripts": ["background.js"],
@@ -12,7 +12,7 @@
         "default_popup": "popup.html",
         "default_icon": {
             "16": "S.png",
-            "32": "S,png",
+            "32": "S.png",
             "48": "S.png",
             "128": "S.png"
         }
