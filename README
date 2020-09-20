@@ -1,1 +1,8 @@
-Hello
+Schedulink is a student project coded in less than 36 hours and submitted to the HackMIT competition. 
+
+This Chrome extension is built to compile meeting links in one central location and make joining them
+simpler and easier. Schedulink requires the user to input their schedule and class meeting links before
+using. The software then parses inputted data to recognize when meetings are about to start and sends 
+notifications to the user containing information about their class and the meeting link itself. The
+extension helps users cut down on the many pathways they currently have to take in order to join various
+events. 
