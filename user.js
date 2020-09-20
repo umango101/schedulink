@@ -1,0 +1,2 @@
+var sections = []
+var week = []

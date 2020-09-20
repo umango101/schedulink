@@ -7,6 +7,10 @@
         "scripts": ["background.js"],
         "peristent": false
     },
+    "user": {
+        "scripts": ["user.js"],
+        "persistent": true
+    },
     "options_page": "options.html",
     "browser_action": {
         "default_popup": "popup.html",
