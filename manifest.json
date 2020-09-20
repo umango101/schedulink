@@ -5,7 +5,7 @@
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "background": {
         "scripts": ["background.js"],
-        "peristent": true
+        "peristent": false
     },
     "options_page": "options.html",
     "browser_action": {
