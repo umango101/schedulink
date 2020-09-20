@@ -2,40 +2,41 @@
 <html lang="en-US">
     <head>
         <title>Add classes</title>
+        <script script type="text/javascript" src="form.js"></script>
     </head>
     <body>
         <form>
-            <label for="Class1">Class/Activity</label>
-            <input type="text" id="Class1" name="class1">
+            <label for="ClassName">Class/Activity</label>
+            <input type="text" id="ClassName" name="className">
             <p>
               <p>
                 <div>
-                    <input type="checkbox" id="Class1Monday" name="Monday" value="0">
-                    <label for="Class1Monday">M</label>
-                    <input type="checkbox" id="Class1Tuesday" name="Tuesday" value="1">
-                    <label for="Class1Tuesday">T</label>
-                    <input type="checkbox" id="Class1Wednesday" name="Wednesday" value="2">
-                    <label for="Class1Wednesday">W</label>
-                    <input type="checkbox" id="Class1Thursday" name="Thursday" value="3">
-                    <label for="Class1Thursday">Th</label>
-                    <input type="checkbox" id="Class1Friday" name="Friday" value="4">
-                    <label for="Class1Friday">F</label>
-                    <input type="checkbox" id="Class1Saturday" name="Saturday" value="5">
-                    <label for="Class1Saturday">S</label>
-                    <input type="checkbox" id="Class1Sunday" name="Sunday" value="6">
-                    <label for="Class1Sunday">Su</label>
+                    <input type="checkbox" id="ClassMonday" name="Monday" value="1">
+                    <label for="ClassMonday">M</label>
+                    <input type="checkbox" id="ClassTuesday" name="Tuesday" value="2">
+                    <label for="ClassTuesday">T</label>
+                    <input type="checkbox" id="ClassWednesday" name="Wednesday" value="3">
+                    <label for="ClassWednesday">W</label>
+                    <input type="checkbox" id="ClassThursday" name="Thursday" value="4">
+                    <label for="ClassThursday">Th</label>
+                    <input type="checkbox" id="ClassFriday" name="Friday" value="5">
+                    <label for="ClassFriday">F</label>
+                    <input type="checkbox" id="ClassSaturday" name="Saturday" value="6">
+                    <label for="ClassSaturday">S</label>
+                    <input type="checkbox" id="ClassSunday" name="Sunday" value="0">
+                    <label for="ClassSunday">Su</label>
                 </div>
               </p>
               <p>
                   <div>
-                    <label for="Class1Time">Meeting Time</label>
-                    <input type="time", id="Class1Time" name="class1time">
+                    <label for="ClassTime">Class Time</label>
+                    <input type="time", id="ClassTime" name="classTime">
                   </div>
                   <div>
-                    <label for="Class1EndTime">End Time</label>
-                    <input type="time", id="Class1EndTime" name="class1endtime">
+                    <label for="ClassEndTime">End Time</label>
+                    <input type="time", id="ClassEndTime" name="classEndTime">
                   </div>
-                  <p>
+                  <!-- <p>
                       <div>
                             Reminder at:
                             <div>
@@ -47,21 +48,14 @@
                                 </select>
                             </div>
                       </div>
-                    </p>
-
+                    </p> -->
                 </p>
               <p>
-                <label for="Class1Link">Meeting Link</label>
-                <input type="text" id="Class1Link" name="class1link">
+                <label for="ClassLink">Meeting Link</label>
+                <input type="text" id="ClassLink" name="classLink">
               </p>
             </p>
-            <input type="submit" value="Submit">
+            <input type="submit" id="submit" value="Submit">
         </form>
-
-        <p>
-          <a href="popup.html">
-            <button id="buttonDiv">EXIT</button>
-          </a>
-        </p>
     </body>
 </html>
